@@ -1,36 +1,74 @@
-site_name: obsidian-mkdocs template
+site_name: User Manual
 
 theme:
     name: 'material'
-    palette:
+    language: en
 
-    # Light mode
+    logo: assets/logo.png
+    favicon: assets/favicon.ico
+
+    icon:
+      search: octicons/search-24
+      close: octicons/x-24
+      top: octicons/chevron-up-24
+      previous: octicons/chevron-left-24
+      next: octicons/chevron-right-24
+      admonition:
+        note: octicons/tag-16
+        abstract: octicons/checklist-16
+        info: octicons/info-16
+        tip: octicons/squirrel-16
+        success: octicons/check-16
+        question: octicons/question-16
+        warning: octicons/alert-16
+        failure: octicons/x-circle-16
+        danger: octicons/zap-16
+        bug: octicons/bug-16
+        example: octicons/beaker-16
+        quote: octicons/quote-16
+
+    features:
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.footnote.tooltips
+    - navigation.path
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+
+    palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: pink
-      accent: indigo
+      primary: deep orange
+      accent: deep orange
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: octicons/moon-16
         name: Switch to dark mode
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: pink
-      accent: blue
+      primary: deep orange
+      accent: deep orange
       toggle:
-        icon: material/toggle-switch
+        icon: octicons/sun-16
         name: Switch to light mode
 
 # Extensions
 markdown_extensions:
   - footnotes
-  # - attr_list
+  - attr_list
+  - md_in_html
+  - tables
+  - admonition
+  - footnotes
   - pymdownx.arithmatex:
       generic: true
-  # - pymdownx.superfences
-  # - pymdownx.details
-  # - pymdownx.magiclink
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
@@ -38,27 +76,32 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.details
   - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
 
 plugins:
   - search
-  - roamlinks
-  - blog
-  - rss:
-      match_path: blog/posts/.* 
-      date_from_meta:
-        as_creation: date
-      categories:
-        - categories
-        - tags
+  - tags
 
 extra_javascript:
   - javascripts/mathjax.js
