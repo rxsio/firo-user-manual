@@ -28,36 +28,37 @@ theme:
         quote: octicons/quote-16
 
     features:
-    - navigation.top
-    - search.suggest
     - content.code.copy
     - content.code.select
     - content.code.annotate
     - content.footnote.tooltips
+    - navigation.top
+    - navigation.tabs
     - navigation.path
     - navigation.footer
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
-    - navigation.tracking
+    - search.suggest
 
     palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep orange
-      accent: deep orange
-      toggle:
-        icon: octicons/moon-16
-        name: Switch to dark mode
+      # Light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: teal
+        accent: teal
+        toggle:
+          icon: octicons/moon-16
+          name: Switch to dark mode
 
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep orange
-      accent: deep orange
-      toggle:
-        icon: octicons/sun-16
-        name: Switch to light mode
+      # Dark mode
+      - media: "(prefers-color-scheme: dark)"
+        scheme: slate
+        primary: teal
+        accent: teal
+        toggle:
+          icon: octicons/sun-16
+          name: Switch to light mode
 
 # Extensions
 markdown_extensions:
@@ -72,6 +73,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - def_list
+  - mdx_breakless_lists
+  - mdx_truly_sane_lists
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -102,9 +105,10 @@ markdown_extensions:
 plugins:
   - search
   - tags
+  - roamlinks
 
 extra_javascript:
-  - javascripts/mathjax.js
+  - assets/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js 

@@ -31,7 +31,7 @@ The notes appear as pages within these sections. For example, [[Note 1]] in `Top
 !!! note
     Achtung
 
-### Adnotation
+### Annotation
 Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 { .annotate }
 
