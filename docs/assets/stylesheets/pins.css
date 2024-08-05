@@ -1,0 +1,15 @@
+.pin {
+    position: absolute;
+}
+
+.pins .pin-big .md-annotation__index {
+    scale: 1.5;
+}
+
+.pins .pin-contrast .md-annotation__index:before {
+    background: white;
+}
+
+.pins .pin-contrast .md-annotation__index:after {
+    background: var(--md-primary-fg-color);
+}

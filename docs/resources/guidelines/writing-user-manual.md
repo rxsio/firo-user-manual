@@ -12,6 +12,44 @@ Creating a user manual is essential for helping users understand and effectively
 4. **Use Visual Aids:** Add screenshots, diagrams, and captions for clarity.
 4. **Update Regularly:** Revise to reflect product changes and keep instructions accurate
 
+## File Naming
+
+- Files should be in lowercase, using - instead of spaces.
+- Folders should be in lowercase and organized hierarchically.
+
+!!! example
+
+    ```md
+        docs
+        ├── assets
+        │   ├── favicon.ico
+        │   ├── javascripts
+        │   │   └── mathjax.js
+        │   └── logo.png
+        ├── index.md
+        └── resources
+            ├── guidelines
+            │   ├── mechanical-file-naming-and-structure.md
+            │   └── writing-documentation.md
+            └── template
+                ├── pcb-documentation-template.md
+                └── pcb-repository-template.md
+    ```
+
+### Metadata
+
+Metadata allows to edit various things about documentation page eg. title.
+
+!!! example
+
+    ```md
+    ---
+    title: Your Title
+    ---
+
+    Content
+    ```
+
 ## Markdown
 
 User manual should be written in Markdown. By using various Markdown components, you can create engaging and accessible user manual. Markdown's simplicity and flexibility help enhance readability and structure, making it easier to present information effectively.
@@ -232,6 +270,8 @@ Admonitions in documentation allow you to draw the user's attention to important
     Illustrate concepts with practical examples.
 ??? quote
     Highlight significant quotes or key statements.
+??? outdated
+    Marks outdated section of the documentation
 
 ### Annotations
 
@@ -254,6 +294,40 @@ Annotations are little markers that can be added almost anywhere in document. Wh
 
         1. A watchdog is a monitoring system or process designed to ensure that a computer system or application is functioning correctly and to detect and respond to failures or issues.
         ```
+
+### Pins
+
+Pins allow for placing annotations on images, which can be useful for highlighting specific areas
+
+- `pin-big`: Enlarges the pin.
+- `pin-contrast`: Creates a high-contrast pin.
+- `data-x` and `data-y`: Set the pin's position as a percentage on the image.
+
+???+ example
+
+    === "Content"
+
+        <div class="image-box pins annotate" markdown>
+        ![Image title](https://dummyimage.com/600x200/eee/aaa){ align=center }
+
+        <span class="pin pin-big pin-contrast" data-x="0.5" data-y="0.5">(1)</span>
+        </div>
+
+        1. This is center of image
+
+    === "Markdown"
+
+        ```md
+        <div class="image-box pins annotate" markdown>
+        ![Image title](https://dummyimage.com/600x200/eee/aaa){ align=center }
+
+        <span class="pin pin-big pin-contrast" data-x="0.5" data-y="0.5">(1)</span>
+        </div>
+
+        2. This is center of image
+        ```
+
+
 
 ### Footnotes
 
