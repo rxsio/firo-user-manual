@@ -119,8 +119,7 @@ extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js
 
 nav:
-  - Rover:
-    - rover/index.md
+  - index.md
   - Interface:
     - interface/index.md
     - interface/functionalities.md
