@@ -1,11 +1,13 @@
 site_name: User Manual
 
+# Theme
 theme:
   name: "material"
   language: en
 
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  custom_dir: docs/overrides
 
   icon:
     search: octicons/search-24
@@ -36,17 +38,14 @@ theme:
     - navigation.tabs
     - navigation.path
     - navigation.footer
-    - navigation.instant
-    - navigation.instant.prefetch
-    - navigation.instant.progress
     - search.suggest
 
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep orange
-      accent: deep orange
+      primary: teal
+      accent: teal
       toggle:
         icon: octicons/moon-16
         name: Switch to dark mode
@@ -54,15 +53,14 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep orange
-      accent: deep orange
+      primary: teal
+      accent: teal
       toggle:
         icon: octicons/sun-16
         name: Switch to light mode
 
 # Extensions
 markdown_extensions:
-  - footnotes
   - attr_list
   - md_in_html
   - tables
@@ -109,11 +107,18 @@ plugins:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/carousel.css
   - assets/stylesheets/pins.css
 
 extra_javascript:
+  - assets/javascripts/carousel.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/pins.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+nav:
+  - Resources:
+      - Contribution:
+          - resources/contribution/writing-user-manual.md
