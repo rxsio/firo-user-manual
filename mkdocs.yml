@@ -119,6 +119,20 @@ extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js
 
 nav:
+  - Rover:
+    - index.md
+  - Interface:
+    - interface/index.md
+    - interface/functionalities.md
+    - interface/windows.md
+  - Docking Station:
+    - docking/index.md
+  - Procedures:
+    - procedures/index.md
+    - procedures/startup.md
+    - procedures/safety.md
+    - procedures/docking.md
+    - procedures/move.md
   - Resources:
       - Contribution:
           - resources/contribution/writing-user-manual.md
