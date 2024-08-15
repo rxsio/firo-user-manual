@@ -1,0 +1,38 @@
+name: Test
+
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Enable caching
+        uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
+      - name: Install MkDocs-material
+        run: pip install mkdocs-material
+
+      - name: Install MkDocs plugins
+        run: pip install mkdocs-roamlinks-plugin mdx_truly_sane_lists mdx-breakless-lists
+
+      - name: Build
+        run: mkdocs build
