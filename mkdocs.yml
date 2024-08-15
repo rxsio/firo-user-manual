@@ -104,6 +104,9 @@ plugins:
   - search
   - tags
   - roamlinks
+  - mkdocs-video:
+      video_muted: true
+      video_controls: true
 
 extra_css:
   - assets/stylesheets/extra.css

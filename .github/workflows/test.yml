@@ -32,7 +32,7 @@ jobs:
         run: pip install mkdocs-material
 
       - name: Install MkDocs plugins
-        run: pip install mkdocs-roamlinks-plugin mdx_truly_sane_lists mdx-breakless-lists
+        run: pip install mkdocs-roamlinks-plugin mdx_truly_sane_lists mdx-breakless-lists mkdocs-video
 
       - name: Build
         run: mkdocs build
