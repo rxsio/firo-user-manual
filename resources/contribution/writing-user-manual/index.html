@@ -1,0 +1,2187 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../procedures/move/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Writing User Manual - User Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13.274 9.537v-.001l-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074ZM4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75Z"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.484 4.484 0 0 1-.563-1.191 3.835 3.835 0 0 1-.05-2.063 4.647 4.647 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .748.748 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.425 2.425 0 0 1-.507-.441 3.075 3.075 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19a.884.884 0 0 1 .01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.737 3.737 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353V.75Z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343h-.001a8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746Zm1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275ZM6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L6.94 8 4.97 6.03a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018Z"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.249 1.249 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004L9.503.429Zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006a.036.036 0 0 0-.004-.009l-.006-.006-.008-.001c-.003 0-.006.002-.009.004Z"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.488 3.488 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327c0 .1-.009.197-.025.292.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5c0 .409-.049.806-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A4.997 4.997 0 0 1 8 16a4.997 4.997 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5.036 5.036 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.677 1.677 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06Zm.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.172.172 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173Z"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.746.746 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5Zm4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0Z"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/carousel.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/pins.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-rules" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="User Manual" class="md-header__button md-logo" aria-label="User Manual" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            User Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Writing User Manual
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.598 1.591a.749.749 0 0 1 .785-.175 7.001 7.001 0 1 1-8.967 8.967.75.75 0 0 1 .961-.96 5.5 5.5 0 0 0 7.046-7.046.75.75 0 0 1 .175-.786Zm1.616 1.945a7 7 0 0 1-7.678 7.678 5.499 5.499 0 1 0 7.678-7.678Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-1.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm5.657-8.157a.75.75 0 0 1 0 1.061l-1.061 1.06a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734l1.06-1.06a.75.75 0 0 1 1.06 0Zm-9.193 9.193a.75.75 0 0 1 0 1.06l-1.06 1.061a.75.75 0 1 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0ZM8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0ZM3 8a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 3 8Zm13 0a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 16 8Zm-8 5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13Zm3.536-1.464a.75.75 0 0 1 1.06 0l1.061 1.06a.75.75 0 0 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 0-1.061ZM2.343 2.343a.75.75 0 0 1 1.061 0l1.06 1.061a.751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018l-1.06-1.06a.75.75 0 0 1 0-1.06Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2ZM3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.25 2a8.25 8.25 0 0 1 6.34 13.53l5.69 5.69a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-5.69-5.69A8.25 8.25 0 1 1 10.25 2ZM3.5 10.25a6.75 6.75 0 1 0 13.5 0 6.75 6.75 0 0 0-13.5 0Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.28 5.22a.75.75 0 0 1 0 1.06L9.56 12l5.72 5.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.75.75 0 0 1 1.06 0Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.72 5.72a.75.75 0 0 1 1.06 0L12 10.94l5.22-5.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L13.06 12l5.22 5.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L12 13.06l-5.22 5.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L10.94 12 5.72 6.78a.75.75 0 0 1 0-1.06Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Rover
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../interface/" class="md-tabs__link">
+          
+  
+  Interface
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../docking/" class="md-tabs__link">
+          
+  
+  Docking Station
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../procedures/" class="md-tabs__link">
+          
+  
+  Procedures
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Resources
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="User Manual" class="md-nav__button md-logo" aria-label="User Manual" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    User Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rover
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Interface
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Interface
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interface/functionalities/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functionalities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../interface/windows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Docking Station
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Docking Station
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../docking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Procedures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Procedures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../procedures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../procedures/startup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Startup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../procedures/safety/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Safety
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../procedures/docking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../procedures/move/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Move
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Resources
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Resources
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contribution
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Contribution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Writing User Manual
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Writing User Manual
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Rules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-new-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating New Page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating New Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Naming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Formatting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grids
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Blocks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admonitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Admonitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carousel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carousel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Rules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-new-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating New Page
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating New Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Naming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metadata
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#text-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Text Formatting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grids
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Blocks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Admonitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Admonitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#available-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Available Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Annotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pins" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carousel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Carousel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#footnotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Footnotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagrams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#file-button" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Button
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Tags -->
+
+
+<!-- Actions -->
+
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+
+<h1>Writing User Manual</h1>
+
+
+<!--
+  FIRO: Article metadata
+-->
+<div class="metadata">
+    
+    <div class="metadata-item">
+        <span class="twemoji">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z">
+                </path>
+            </svg>
+        </span>
+        
+        
+
+        <a class="metadata-author" href="mailto: pfgryz@gmail.com">Patryk Filip Gryz</a>
+        
+    </div>
+    
+
+    
+    <div class="metadata-item">
+        <span class="twemoji">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M11.998 2.5A9.503 9.503 0 0 0 3.378 8H5.75a.75.75 0 0 1 0 1.5H2a1 1 0 0 1-1-1V4.75a.75.75 0 0 1 1.5 0v1.697A10.997 10.997 0 0 1 11.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 0 1 1.5-.037 9.5 9.5 0 0 0 9.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5Z">
+                </path>
+                <path
+                    d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z">
+                </path>
+            </svg>
+        </span>
+        15.08.2024
+    </div>
+    
+
+    
+    <div class="metadata-item">
+        <span class="twemoji">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"></path>
+                <path
+                    d="M2.5 1h8.44a1.5 1.5 0 0 1 1.06.44l10.25 10.25a1.5 1.5 0 0 1 0 2.12l-8.44 8.44a1.5 1.5 0 0 1-2.12 0L1.44 12A1.497 1.497 0 0 1 1 10.94V2.5A1.5 1.5 0 0 1 2.5 1Zm0 1.5v8.44l10.25 10.25 8.44-8.44L10.94 2.5Z">
+                </path>
+            </svg>
+        </span>
+        0.1.0
+    </div>
+    
+</div>
+
+<!-- Page content -->
+<div><p>Creating a user manual is essential for helping users understand and effectively utilize a product or service. A well-structured user manual improves user experience and supports users in resolving issues independently. This guideline provides key principles for writing an effective user manual and an overview of Markdown components for organizing content.</p>
+<h2 id="general-rules">General Rules<a class="headerlink" href="#general-rules" title="Permanent link">¶</a></h2>
+<ol>
+<li><strong>Be Clear and Concise:</strong> Use simple language, avoid technical jargon and use step-by-step instructions.</li>
+<li><strong>Organize Information Logically:</strong> Use headings, subheadings, and bullet points for clear structure, and include a table of contents if the document is lengthy.</li>
+<li><strong>Provide Context:</strong> Offer an introduction and explain the manual’s purpose.</li>
+<li><strong>Use Visual Aids:</strong> Add screenshots, diagrams, and captions for clarity.</li>
+<li><strong>Update Regularly:</strong> Revise to reflect product changes and keep instructions accurate</li>
+</ol>
+<h2 id="creating-new-page">Creating New Page<a class="headerlink" href="#creating-new-page" title="Permanent link">¶</a></h2>
+<p>To create a new user manual page:</p>
+<ul>
+<li>create a new file in the folder that best fits the topic you're working on.</li>
+<li>ensure that you adhere to the hierarchical folder structure.</li>
+<li>use the appropriate file naming convention.</li>
+<li>add the page to the navigation.</li>
+<li>provide the correct metadata description. siusiak</li>
+<li>use rich Markdown components.</li>
+</ul>
+<h3 id="file-naming">File Naming<a class="headerlink" href="#file-naming" title="Permanent link">¶</a></h3>
+<ul>
+<li>files should be in lowercase, using <code>-</code> instead of spaces.</li>
+<li>folders should be in lowercase and organized hierarchically.</li>
+</ul>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="language-md highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    docs
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    ├── assets
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    │   ├── favicon.ico
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    │   ├── javascripts
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    │   │   └── mathjax.js
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    │   └── logo.png
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    ├── index.md
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    └── resources
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        ├── guidelines
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        │   ├── mechanical-file-naming-and-structure.md
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        │   └── writing-user manua.md
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>        └── template
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>            ├── pcb-documentation-template.md
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            └── pcb-repository-template.md
+</span></code></pre></div>
+</div>
+<h3 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">¶</a></h3>
+<p>To add a page to the navigation:</p>
+<ul>
+<li>edit the <code>nav</code> section in the <code>mkdocs.yml</code> file.</li>
+<li>add a new entry under the appropriate category that corresponds to your page.</li>
+</ul>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">nav</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Other Category</span><span class="p">:</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">other-category/other-file.md</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Your Section Name</span><span class="p">:</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your-section-name/other-file.md</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Your Subsection Name</span><span class="p">:</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">your-section-name/your-subsection-name/your-file.md</span><span class="w"> </span><span class="c1"># &lt;-- YOUR ENTRY</span>
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Order of entries in the file reflects the order in the user manua.</p>
+</div>
+<h3 id="metadata">Metadata<a class="headerlink" href="#metadata" title="Permanent link">¶</a></h3>
+<p>Metadata allows you to edit various aspects of a user manua page. Currently, the user manua supports the following fields:</p>
+<ul>
+<li>Title</li>
+<li>Authors</li>
+<li>Date</li>
+<li>Version</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The title and authors are mandatory fields that must be included in the page metadata. Author's email address should be put after <code>,</code>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Author's email address should be put after <code>,</code></p>
+<div class="language-md highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>---
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>title: Your Title
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>authors:
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>John Smith, smith@example.com
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="k">-</span><span class="w"> </span>Jan Kowalski, jan-kowalski@example.com
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>version: 1.0
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="gu">date: 14.08.2024</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="gu">---</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>Content
+</span></code></pre></div>
+</div>
+<h2 id="markdown">Markdown<a class="headerlink" href="#markdown" title="Permanent link">¶</a></h2>
+<p>User manual should be written in Markdown. By using various Markdown components, you can create engaging and accessible user manual.</p>
+<h3 id="text-formatting">Text Formatting<a class="headerlink" href="#text-formatting" title="Permanent link">¶</a></h3>
+<p>Basic formatting allows you to enhance text by applying styles such as bold, italic, and underline. It helps emphasize important information, improve readability, and structure content effectively.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Content</label><label for="__tabbed_1_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>FIRO</strong> (<em>FLASH Inspection Rover</em>, also known as <em>Facility Inspection Rover</em>) is a mobile robot designed to operate in environments where human presence is <mark>restricted due to hazardous radiation levels.</mark> It is a <ins>student project</ins> developed mostly during Erasmus internships at the FLASH particle accelerator at DESY</p>
+<ul>
+<li><strong>bold</strong></li>
+<li><em>italic</em></li>
+<li><ins>underline</ins></li>
+<li><mark>highlight</mark></li>
+<li><del>strike</del></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>**FIRO** (*FLASH Inspection Rover*, also known as *Facility Inspection Rover*) is a mobile robot designed to operate in environments where human presence is ==restricted due to hazardous radiation levels.== It is a ^^student project^^ developed mostly during Erasmus internships at the FLASH particle accelerator at DESY
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>- **bold**
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>- *italic*
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>- ^^underline^^
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>- ==highlight==
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>- ~~strike~~
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">¶</a></h3>
+<p>Headers organize content into sections, making it easier to navigate and understand the structure of your user manua. They are useful for highlighting key topics, creating.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a># System A
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>## Subsystem B
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>### Module C
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>#### Component D
+</span></code></pre></div>
+</details>
+<h3 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">¶</a></h3>
+<p>Lists organize information into clear, manageable points, making content easier to read and understand. They are useful for outlining steps, summarizing key points, or grouping related items.</p>
+<details class="example" open="open">
+<summary>Example: Basic list</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">Content</label><label for="__tabbed_2_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>Software<ul>
+<li>Interface</li>
+<li>Cameras</li>
+</ul>
+</li>
+<li>Electronics</li>
+<li>Mechanics</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>4. Software
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  - Interface
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - Cameras
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>5. Electronics
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>6. Mechanics
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<details class="example" open="open">
+<summary>Example: List with checks</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked id="__tabbed_3_1" name="__tabbed_3" type="radio"><input id="__tabbed_3_2" name="__tabbed_3" type="radio"><div class="tabbed-labels"><label for="__tabbed_3_1">Content</label><label for="__tabbed_3_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Interface</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Camera streams<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Basic streams</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Bridge to ROS2</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled><span class="task-list-indicator"></span></label> Charts</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked><span class="task-list-indicator"></span></label> Controller support</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>Interface
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">- [ ]</span> Camera streams
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="k">* [x]</span> Basic streams
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="k">* [ ]</span> Bridge to ROS2
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="k">- [ ]</span> Charts
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="k">- [x]</span> Controller support
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">¶</a></h3>
+<p>Tables present data in a structured, grid format, making it easy to compare and analyze information. They are useful for displaying statistics, comparing features, or organizing detailed information systematically.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked id="__tabbed_4_1" name="__tabbed_4" type="radio"><input id="__tabbed_4_2" name="__tabbed_4" type="radio"><div class="tabbed-labels"><label for="__tabbed_4_1">Content</label><label for="__tabbed_4_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">FIRO</td>
+<td style="text-align: left;">Mobile robot</td>
+</tr>
+<tr>
+<td style="text-align: left;">RadCon</td>
+<td style="text-align: left;">Real-time Gamma Dosimeter</td>
+</tr>
+<tr>
+<td style="text-align: left;">FLASH</td>
+<td style="text-align: left;">Linear accelerator at DESY</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>| Name   | Description                |
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>| :----- | :------------------------- |
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>| FIRO   | Mobile robot               |
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>| RadCon | Real-time Gamma Dosimeter  |
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>| FLASH  | Linear accelerator at DESY |
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="grids">Grids<a class="headerlink" href="#grids" title="Permanent link">¶</a></h3>
+<p>Grids arrange content in a structured, multi-column layout, providing a visually appealing way to display related information. They are useful for organizing complex data, showcasing comparisons, or creating responsive designs in user manua.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked id="__tabbed_5_1" name="__tabbed_5" type="radio"><input id="__tabbed_5_2" name="__tabbed_5" type="radio"><div class="tabbed-labels"><label for="__tabbed_5_1">Content</label><label for="__tabbed_5_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="grid cards" markdown>
+<ul>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m0 32 34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path></svg></span> <strong>HTML</strong> for content and structure</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path></svg></span> <strong>JavaScript</strong> for interactivity</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m480 32-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"></path></svg></span> <strong>CSS</strong> for text running out of boxes</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M483.049 159.706c10.855-24.575 21.424-60.438 21.424-87.871 0-72.722-79.641-98.371-209.673-38.577-107.632-7.181-211.221 73.67-237.098 186.457 30.852-34.862 78.271-82.298 121.977-101.158C125.404 166.85 79.128 228.002 43.992 291.725 23.246 329.651 0 390.94 0 436.747c0 98.575 92.854 86.5 180.251 42.006 31.423 15.43 66.559 15.573 101.695 15.573 97.124 0 184.249-54.294 216.814-146.022H377.927c-52.509 88.593-196.819 52.996-196.819-47.436H509.9c6.407-43.581-1.655-95.715-26.851-141.162zM64.559 346.877c17.711 51.15 53.703 95.871 100.266 123.304-88.741 48.94-173.267 29.096-100.266-123.304zm115.977-108.873c2-55.151 50.276-94.871 103.98-94.871 53.418 0 101.981 39.72 103.981 94.871H180.536zm184.536-187.6c21.425-10.287 48.563-22.003 72.558-22.003 31.422 0 54.274 21.717 54.274 53.722 0 20.003-7.427 49.007-14.569 67.867-26.28-42.292-65.986-81.584-112.263-99.586z"></path></svg></span> <strong>Internet Explorer</strong> ... huh?</li>
+</ul>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;div class="grid cards" markdown&gt;
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">-</span><span class="w"> </span>:fontawesome-brands-html5: <span class="gs">__HTML__</span> for content and structure
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">-</span><span class="w"> </span>:fontawesome-brands-js: <span class="gs">__JavaScript__</span> for interactivity
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="k">-</span><span class="w"> </span>:fontawesome-brands-css3: <span class="gs">__CSS__</span> for text running out of boxes
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="k">-</span><span class="w"> </span>:fontawesome-brands-internet-explorer: <span class="gs">__Internet Explorer__</span> ... huh?
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>&lt;/div&gt;
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="code-blocks">Code Blocks<a class="headerlink" href="#code-blocks" title="Permanent link">¶</a></h3>
+<p>Code blocks allow you to display formatted code snippets within your user manua, making it easier for readers to understand and replicate coding examples. They are essential for illustrating programming concepts, providing step-by-step instructions, and sharing command-line operations or configuration files in a clear and readable manner.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked id="__tabbed_6_1" name="__tabbed_6" type="radio"><input id="__tabbed_6_2" name="__tabbed_6" type="radio"><div class="tabbed-labels"><label for="__tabbed_6_1">Content</label><label for="__tabbed_6_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-py highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="o">...</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="n">main</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="sb">```py</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="o">...</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">main</span><span class="p">()</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="sb">```</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">¶</a></h3>
+<p>Admonitions in user manua allow you to draw the user's attention to important issues. Using the appropriate type, such as notes, warnings, or tips, is key for effective communication.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked id="__tabbed_7_1" name="__tabbed_7" type="radio"><input id="__tabbed_7_2" name="__tabbed_7" type="radio"><div class="tabbed-labels"><label for="__tabbed_7_1">Content</label><label for="__tabbed_7_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is note admonition</p>
+</div>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>This is warning admonition. It is auto expanded</p>
+</details>
+<details class="danger">
+<summary>Danger</summary>
+<p>This is danger admonition. You can expand this admonition</p>
+</details>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>!!! note
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    This is note admonition
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>???+ warning
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    This is warning admonition. It is auto expanded
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>??? danger
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    This is danger admonition. You can expand this admonition
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h4 id="available-types">Available Types<a class="headerlink" href="#available-types" title="Permanent link">¶</a></h4>
+<details class="note">
+<summary>Note</summary>
+<p>Use for general important information or reminders.</p>
+</details>
+<details class="abstract">
+<summary>Abstract</summary>
+<p>Summarize key points or concepts succinctly.</p>
+</details>
+<details class="info">
+<summary>Info</summary>
+<p>Provide additional context or background information.</p>
+</details>
+<details class="tip">
+<summary>Tip</summary>
+<p>Share helpful advice or best practices.</p>
+</details>
+<details class="success">
+<summary>Success</summary>
+<p>Indicate successful outcomes or positive results.</p>
+</details>
+<details class="question">
+<summary>Question</summary>
+<p>Pose questions to engage readers or prompt thinking.</p>
+</details>
+<details class="warning">
+<summary>Warning</summary>
+<p>Highlight potential issues or cautionary advice.</p>
+</details>
+<details class="failure">
+<summary>Failure</summary>
+<p>Discuss failures or mistakes to avoid.</p>
+</details>
+<details class="danger">
+<summary>Danger</summary>
+<p>Alert users to critical issues or severe risks.</p>
+</details>
+<details class="bug">
+<summary>Bug</summary>
+<p>Document known bugs or issues in the system.</p>
+</details>
+<details class="example">
+<summary>Example</summary>
+<p>Illustrate concepts with practical examples.</p>
+</details>
+<details class="quote">
+<summary>Quote</summary>
+<p>Highlight significant quotes or key statements.</p>
+</details>
+<details class="outdated">
+<summary>Outdated</summary>
+<p>Marks outdated section of the user manua</p>
+</details>
+<details class="expand">
+<summary>Expand</summary>
+<p>As placeholder for planning structure of page</p>
+</details>
+<h3 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">¶</a></h3>
+<p>Annotations are little markers that can be added almost anywhere in document. When users click on or focus these markers, a tooltip appears with expandable content. You can use them to add additional content for some topics.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked id="__tabbed_8_1" name="__tabbed_8" type="radio"><input id="__tabbed_8_2" name="__tabbed_8" type="radio"><div class="tabbed-labels"><label for="__tabbed_8_1">Content</label><label for="__tabbed_8_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p class="annotate">The rover has builtin watchdog (1)</p>
+<ol>
+<li>A watchdog is a monitoring system or process designed to ensure that a computer system or application is functioning correctly and to detect and respond to failures or issues.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>The rover has builtin watchdog (1)
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>{ .annotate }
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">1.</span> A watchdog is a monitoring system or process designed to ensure that a computer system or application is functioning correctly and to detect and respond to failures or issues.
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="pins">Pins<a class="headerlink" href="#pins" title="Permanent link">¶</a></h3>
+<p>Pins allow for placing annotations on images, which can be useful for highlighting specific areas</p>
+<ul>
+<li><code>pin-big</code>: Enlarges the pin.</li>
+<li><code>pin-contrast</code>: Creates a high-contrast pin.</li>
+<li><code>data-x</code> and <code>data-y</code>: Set the pin's position as a percentage on the image.</li>
+<li><code>data-id</code>: Sets the index of the image to which the pin belongs. Indexing starts from <code>0</code></li>
+</ul>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked id="__tabbed_9_1" name="__tabbed_9" type="radio"><input id="__tabbed_9_2" name="__tabbed_9" type="radio"><div class="tabbed-labels"><label for="__tabbed_9_1">Content</label><label for="__tabbed_9_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p></p><div class="image-box pins annotate" markdown>
+<img align="center" alt="Image title" src="https://dummyimage.com/600x200/eee/aaa">
+<p><span class="pin pin-big pin-contrast" data-x="0.5" data-y="0.5" data-id="0">(1)</span>
+</p></div>
+<ol>
+<li>This is center of image</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&lt;div class="image-box pins annotate" markdown&gt;
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>![<span class="nt">Image title</span>](<span class="na">https://dummyimage.com/600x200/eee/aaa</span>){ align=center }
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>&lt;span class="pin pin-big pin-contrast" data-x="0.5" data-y="0.5" data-id="0"&gt;(1)&lt;/span&gt;
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>&lt;/div&gt;
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="k">1.</span> This is center of image
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="carousel">Carousel<a class="headerlink" href="#carousel" title="Permanent link">¶</a></h3>
+<p>The carousel feature allows for displaying multiple images in a slideshow format. Users can navigate through the images to get a comprehensive view.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked id="__tabbed_10_1" name="__tabbed_10" type="radio"><input id="__tabbed_10_2" name="__tabbed_10" type="radio"><div class="tabbed-labels"><label for="__tabbed_10_1">Content</label><label for="__tabbed_10_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p></p><div class="image-box carousel center" markdown>
+<img align="center" alt="Image title" src="https://dummyimage.com/300x200/eee/aaa">
+<img align="center" alt="Image title" src="https://dummyimage.com/600x200/000/fff">
+</div>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&lt;div class="image-box carousel center" markdown&gt;
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>![<span class="nt">Image title</span>](<span class="na">https://dummyimage.com/300x200/eee/aaa</span>){ align=center }
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>![<span class="nt">Image title</span>](<span class="na">https://dummyimage.com/600x200/000/fff</span>){ align=center }
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>&lt;/div&gt;
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<details class="example" open="open">
+<summary>Example: Mixing with pins</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked id="__tabbed_11_1" name="__tabbed_11" type="radio"><input id="__tabbed_11_2" name="__tabbed_11" type="radio"><div class="tabbed-labels"><label for="__tabbed_11_1">Content</label><label for="__tabbed_11_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p></p><div class="image-box carousel pins annotate center" markdown>
+<img align="center" alt="Image title" src="https://dummyimage.com/300x200/eee/aaa">
+<img align="center" alt="Image title" src="https://dummyimage.com/600x200/000/fff">
+<p><span class="pin pin-big pin-contrast" data-x="0.5" data-y="0.5" data-id="1">(1)</span>
+<span class="pin pin-big pin-contrast" data-x="0.2" data-y="0.5" data-id="0">(2)</span>
+</p></div>
+<ol>
+<li>This is center of second image</li>
+<li>Left side of first image</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>&lt;div class="image-box carousel center" markdown&gt;
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>![<span class="nt">Image title</span>](<span class="na">https://dummyimage.com/600x200/eee/aaa</span>){ align=center }
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>![<span class="nt">Image title</span>](<span class="na">https://dummyimage.com/600x200/000/fff</span>){ align=center }
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>&lt;/div&gt;
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="footnotes">Footnotes<a class="headerlink" href="#footnotes" title="Permanent link">¶</a></h3>
+<p>Footnotes provide additional information or references without interrupting the flow of the main text. They are useful for citing sources, adding clarifications, or offering supplementary details.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked id="__tabbed_12_1" name="__tabbed_12" type="radio"><input id="__tabbed_12_2" name="__tabbed_12" type="radio"><div class="tabbed-labels"><label for="__tabbed_12_1">Content</label><label for="__tabbed_12_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>We use RadCon<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> dosimeter as main component for radiation data collection submodule</p>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>We use RadCon[^1] dosimeter as main component for radiation data collection submodule
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>[<span class="nl">^1</span>]: <span class="na">Markus Hoffmann, MichaelFenner, Stanislav Chystiakov, Julien Branlard, Holger Schlarb, Bhaskar Mukherjee, *RadCon a real-time Gamma Dosimeter for XFEL using PIN-Diode-Sensors*, 2019</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="formulas">Formulas<a class="headerlink" href="#formulas" title="Permanent link">¶</a></h3>
+<p>Formulas allow you to present mathematical equations and expressions clearly within your user manua. They are essential for explaining calculations, scientific concepts, and technical details accurately and concisely. Using LaTeX make formulas easy to read and use.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked id="__tabbed_13_1" name="__tabbed_13" type="radio"><input id="__tabbed_13_2" name="__tabbed_13" type="radio"><div class="tabbed-labels"><label for="__tabbed_13_1">Content</label><label for="__tabbed_13_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="arithmatex">\[
+R = \frac{U}{I}
+\]</div>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>$$
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>R = \frac{U}{I}
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>$$
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="diagrams">Diagrams<a class="headerlink" href="#diagrams" title="Permanent link">¶</a></h3>
+<p>Diagrams visually represent complex concepts, processes, or relationships, making them easier to understand. They enhance user manua by providing clear, illustrative explanations that complement textual descriptions.</p>
+<details class="example" open="open">
+<summary>Example: Basic graph</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked id="__tabbed_14_1" name="__tabbed_14" type="radio"><input id="__tabbed_14_2" name="__tabbed_14" type="radio"><div class="tabbed-labels"><label for="__tabbed_14_1">Content</label><label for="__tabbed_14_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<pre class="mermaid"><code>%%{init: {'theme': 'dark'}}%%
+graph LR
+
+A(Start) --&gt; B{Error?};
+B -- Yes --&gt; C[Debug];
+B -- No --&gt; H(stop);
+C --&gt; D[Test];
+D --&gt; E{Passes tests?};
+E -- Yes --&gt; G[Deploy];
+E -- No --&gt; C;
+G --&gt; H;</code></pre>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>``` mermaid
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>%%{init: {'theme': 'dark'}}%%
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>graph LR
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>A(Start) --&gt; B{Error?};
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>B -- Yes --&gt; C[Debug];
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>B -- No --&gt; H(stop);
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>C --&gt; D[Test];
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>D --&gt; E{Passes tests?};
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>E -- Yes --&gt; G[Deploy];
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>E -- No --&gt; C;
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>G --&gt; H;
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>```
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<details class="example" open="open">
+<summary>Example: Quadrant chart</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked id="__tabbed_15_1" name="__tabbed_15" type="radio"><input id="__tabbed_15_2" name="__tabbed_15" type="radio"><div class="tabbed-labels"><label for="__tabbed_15_1">Content</label><label for="__tabbed_15_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<pre class="mermaid"><code>%%{init: {'theme': 'dark'}}%%
+
+quadrantChart
+    title Rover components
+
+    x-axis Low complexity --&gt; High complexity
+    y-axis Low priority --&gt; High priority
+
+    quadrant-1 Critical
+    quadrant-2 To implement
+    quadrant-3 Nice to have
+    quadrant-4 To re-evaluate
+
+    Component A: [0.7, 0.9]
+    System B: [0.6, 0.3]
+    Procedure X: [0.4, 0.6]</code></pre>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>``` mermaid
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>%%{init: {'theme': 'dark'}}%%
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>quadrantChart
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    title Rover components
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    x-axis Low complexity --&gt; High complexity
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    y-axis Low priority --&gt; High priority
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    quadrant-1 Critical
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>    quadrant-2 To implement
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>    quadrant-3 Nice to have
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>    quadrant-4 To re-evaluate
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>    Component A: [0.7, 0.9]
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>    System B: [0.6, 0.3]
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>    Procedure X: [0.4, 0.6]
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>```
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="file-button">File Button<a class="headerlink" href="#file-button" title="Permanent link">¶</a></h3>
+<p>The File Button creates a link to a downloadable file. This allows you to highlight documents available for download. By default, the file will be opened by the browser (if the browser supports this feature). If you want to force the file to be downloaded rather than opened, add the download attribute to the link.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:2"><input checked id="__tabbed_16_1" name="__tabbed_16" type="radio"><input id="__tabbed_16_2" name="__tabbed_16" type="radio"><div class="tabbed-labels"><label for="__tabbed_16_1">Content</label><label for="__tabbed_16_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>The component datasheet is available here: <a file="file" href="./">writing-user-manual.md</a> or here (force download) <a download="download" file="file" href="./">writing-user-manual.md</a></p>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>The component datasheet is available here: [<span class="nt">writing-user-manual.md</span>](<span class="na">&lt;./writing-user-manual.md&gt;</span>){ file } or here (force download) [<span class="nt">writing-user-manual.md</span>](<span class="na">&lt;./writing-user-manual.md&gt;</span>){ file download }
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<h3 id="video">Video<a class="headerlink" href="#video" title="Permanent link">¶</a></h3>
+<p>Video allows you to embed a video directly into your web page.</p>
+<details class="example" open="open">
+<summary>Example</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:2"><input checked id="__tabbed_17_1" name="__tabbed_17" type="radio"><input id="__tabbed_17_2" name="__tabbed_17" type="radio"><div class="tabbed-labels"><label for="__tabbed_17_1">Content</label><label for="__tabbed_17_2">Markdown</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="video-container"><iframe src="https://www.youtube.com/embed/oy2zDJPIgwc" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></p>
+</div>
+<div class="tabbed-block">
+<div class="language-md highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>![<span class="nt">type:video</span>](<span class="na">https://www.youtube.com/embed/oy2zDJPIgwc</span>)
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</details>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Markus Hoffmann, MichaelFenner, Stanislav Chystiakov, Julien Branlard, Holger Schlarb, Bhaskar Mukherjee, <em>RadCon a real-time Gamma Dosimeter for XFEL using PIN-Diode-Sensors</em>, 2019 <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+</ol>
+</div></div>
+
+<!-- Source file information -->
+
+
+
+
+
+
+
+  
+  
+
+
+
+<!-- Was this page helpful? -->
+
+
+
+
+<!-- Comment system -->
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.78 15.78a.749.749 0 0 1-1.06 0L12 10.061 6.28 15.78a.749.749 0 1 1-1.06-1.06l6.25-6.25a.749.749 0 0 1 1.06 0l6.25 6.25a.749.749 0 0 1 0 1.06Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../../procedures/move/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Move">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.28 5.22a.75.75 0 0 1 0 1.06L9.56 12l5.72 5.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.75.75 0 0 1 1.06 0Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Move
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.select", "content.code.annotate", "content.footnote.tooltips", "navigation.top", "navigation.tabs", "navigation.path", "navigation.footer", "search.suggest"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../../assets/javascripts/carousel.js"></script>
+      
+        <script src="../../../assets/javascripts/mathjax.js"></script>
+      
+        <script src="../../../assets/javascripts/pins.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>

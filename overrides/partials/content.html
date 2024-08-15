@@ -1,0 +1,102 @@
+<!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Tags -->
+{% if "material/tags" in config.plugins and tags %}
+{% include "partials/tags.html" %}
+{% endif %}
+
+<!-- Actions -->
+{% include "partials/actions.html" %}
+
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+{% if "\x3ch1" not in page.content %}
+<h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+
+<!--
+  FIRO: Article metadata
+-->
+<div class="metadata">
+    {% if page.meta.authors %}
+    <div class="metadata-item">
+        <span class="twemoji">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M3.5 8a5.5 5.5 0 1 1 8.596 4.547 9.005 9.005 0 0 1 5.9 8.18.751.751 0 0 1-1.5.045 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.499-.044 9.005 9.005 0 0 1 5.9-8.181A5.496 5.496 0 0 1 3.5 8ZM9 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm8.29 4c-.148 0-.292.01-.434.03a.75.75 0 1 1-.212-1.484 4.53 4.53 0 0 1 3.38 8.097 6.69 6.69 0 0 1 3.956 6.107.75.75 0 0 1-1.5 0 5.193 5.193 0 0 0-3.696-4.972l-.534-.16v-1.676l.41-.209A3.03 3.03 0 0 0 17.29 8Z">
+                </path>
+            </svg>
+        </span>
+        {% for author in page.meta.authors %}
+        {% set elements = author.split(',') %}
+
+        {% if elements|length > 1 %}<a class="metadata-author" href="mailto:{{ elements[1] }}">{{ elements[0] }}</a>{% else %}<span class="metadata-author">{{ elements[0]
+        }}</span>{% endif %}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if page.meta.version %}
+    <div class="metadata-item">
+        <span class="twemoji">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M11.998 2.5A9.503 9.503 0 0 0 3.378 8H5.75a.75.75 0 0 1 0 1.5H2a1 1 0 0 1-1-1V4.75a.75.75 0 0 1 1.5 0v1.697A10.997 10.997 0 0 1 11.998 1C18.074 1 23 5.925 23 12s-4.926 11-11.002 11C6.014 23 1.146 18.223 1 12.275a.75.75 0 0 1 1.5-.037 9.5 9.5 0 0 0 9.498 9.262c5.248 0 9.502-4.253 9.502-9.5s-4.254-9.5-9.502-9.5Z">
+                </path>
+                <path
+                    d="M12.5 7.25a.75.75 0 0 0-1.5 0v5.5c0 .27.144.518.378.651l3.5 2a.75.75 0 0 0 .744-1.302L12.5 12.315V7.25Z">
+                </path>
+            </svg>
+        </span>
+        {{ page.meta.date }}
+    </div>
+    {% endif %}
+
+    {% if page.meta.date %}
+    <div class="metadata-item">
+        <span class="twemoji">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M7.75 6.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5Z"></path>
+                <path
+                    d="M2.5 1h8.44a1.5 1.5 0 0 1 1.06.44l10.25 10.25a1.5 1.5 0 0 1 0 2.12l-8.44 8.44a1.5 1.5 0 0 1-2.12 0L1.44 12A1.497 1.497 0 0 1 1 10.94V2.5A1.5 1.5 0 0 1 2.5 1Zm0 1.5v8.44l10.25 10.25 8.44-8.44L10.94 2.5Z">
+                </path>
+            </svg>
+        </span>
+        {{ page.meta.version }}
+    </div>
+    {% endif %}
+</div>
+
+<!-- Page content -->
+{{ page.content }}
+
+<!-- Source file information -->
+{% include "partials/source-file.html" %}
+
+<!-- Was this page helpful? -->
+{% include "partials/feedback.html" %}
+
+<!-- Comment system -->
+{% include "partials/comments.html" %}
