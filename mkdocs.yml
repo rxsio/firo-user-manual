@@ -120,7 +120,7 @@ extra_javascript:
 
 nav:
   - Rover:
-    - index.md
+    - rover/index.md
   - Interface:
     - interface/index.md
     - interface/functionalities.md
