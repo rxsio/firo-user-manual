@@ -127,6 +127,7 @@ nav:
     - interface/index.md
     - interface/functionalities.md
     - interface/windows.md
+    - interface/proxy.md
   - Docking Station:
     - docking/index.md
   - Procedures:
