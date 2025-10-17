@@ -1,5 +1,10 @@
-# Autonomy User Manual
-
+---
+title: Autonomy User Manual
+version: 1.0.0
+date: 16.10.2025
+authors:
+  - Kacper Marchlewicz, marchlewicz.kac@gmail.com
+---
 ## Accessing ROS
 
 ROS is running within its own Docker container. To access it, use:
@@ -8,7 +13,6 @@ ROS is running within its own Docker container. To access it, use:
 sudo docker exec -it rover-ros-1 bash
 ```
 
----
 
 ## Launching the Visualization Web App
 
@@ -29,7 +33,6 @@ http://<host_ip>:5000
 Make sure to **switch to the map frame**. Topics will appear once nodes are launched.  
 If the connection becomes unstable, try restarting (either use “Force Reload” in the app or restart the `vizanti_server` node).
 
----
 
 ## Autonomous Mode Setup
 
@@ -60,7 +63,6 @@ Drive the robot around to build the map — it updates every ~0.45 meters or rad
 
 Avoid long, featureless areas (e.g., “infinite corridors”) — they reduce SLAM quality. Try approaching them from other directions.
 
----
 
 ## Saving the Map
 
@@ -89,7 +91,6 @@ map_server:
 Replace `"test_map..."` with your own map name.  
 Save and exit with `CTRL+X`, then `Y`, then `Enter`.
 
----
 
 ## Launching Navigation
 
@@ -112,7 +113,6 @@ Once localized, you can send navigation goals (purple arrow → set pose and ori
 
 Monitor the terminal running navigation — it will show status messages (e.g., receiving goal, recovery behavior).
 
----
 
 ## Docking Station
 
@@ -155,5 +155,5 @@ Docking station coordinates are used by the **docking server** for automatic doc
    ros2 launch firo_navigation dock_action_udocking_launch.py
    ```
 
----
+
 

@@ -129,6 +129,8 @@ nav:
     - interface/windows.md
   - Docking Station:
     - docking/index.md
+  - Autonomy:
+    - autonomy/autonomus-navigation.md
   - Procedures:
     - procedures/index.md
     - procedures/startup.md
